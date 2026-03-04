@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sitio institucional universitario: oferta académica, admisiones, noticias, eventos y portales." />
+  <title>Universidad - Sitio Institucional</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Skip link accesibilidad -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Top bar -->
+  <div class="topbar" role="banner">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="pill">Acreditación</span>
+        <span class="muted">|</span>
+        <span class="muted">Atención: Lun–Vie 9:00–18:00</span>
+      </div>
+      <div class="topbar__right">
+        <a class="topbar__link" href="#contacto">Contacto</a>
+        <a class="topbar__link" href="#admisiones">Admisiones</a>
+        <button class="btn btn--ghost" id="btnTheme" type="button" aria-label="Cambiar tema">Tema</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <div class="brand__mark" aria-hidden="true">U</div>
+        <div class="brand__text">
+          <strong>Universidad</strong>
+          <span>Institucional</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleLines" aria-hidden="true"></span>
+          <span class="sr-only">Abrir menú</span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link" href="#oferta">Oferta Académica</a></li>
+          <li><a class="nav__link" href="#admisiones">Admisiones</a></li>
+          <li><a class="nav__link" href="#vida">Vida Universitaria</a></li>
+          <li><a class="nav__link" href="#noticias">Noticias</a></li>
+          <li><a class="nav__link" href="#eventos">Eventos</a></li>
+          <li><a class="nav__link" href="#portales">Portales</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--primary" href="#admisiones">Solicitar información</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Universidad • Formación integral • Innovación</p>
+          <h1>Tu futuro académico empieza aquí.</h1>
+          <p class="lead">
+            Una experiencia universitaria con enfoque profesional: programas actualizados,
+            docentes expertos, vinculación y vida estudiantil.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="#oferta">Ver programas</a>
+            <a class="btn btn--secondary btn--lg" href="#portales">Acceder a portales</a>
+          </div>
+
+          <div class="hero__badges" aria-label="Indicadores institucionales">
+            <div class="badgeCard">
+              <strong data-counter="35">0</strong>
+              <span>Programas</span>
+            </div>
+            <div class="badgeCard">
+              <strong data-counter="120">0</strong>
+              <span>Docentes</span>
+            </div>
+            <div class="badgeCard">
+              <strong data-counter="14">0</strong>
+              <span>Convenios</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="heroCard">
+            <div class="heroCard__top">
+              <span class="dot dot--1"></span>
+              <span class="dot dot--2"></span>
+              <span class="dot dot--3"></span>
+            </div>
+            <div class="heroCard__body">
+              <div class="miniChart"></div>
+              <div class="heroCard__text">
+                <p class="muted">Explora:</p>
+                <p><strong>Licenciaturas</strong> • Posgrados • Educación continua</p>
+              </div>
+              <div class="heroCard__tags">
+                <span class="tag">Campus</span>
+                <span class="tag">Becas</span>
+                <span class="tag">Movilidad</span>
+              </div>
+            </div>
+          </div>
+          <div class="glow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick links -->
+    <section class="quick">
+      <div class="container quick__grid">
+        <a class="quickItem" href="#admisiones">
+          <span class="quickItem__icon" aria-hidden="true">🎓</span>
+          <div>
+            <strong>Admisiones</strong>
+            <p class="muted">Requisitos, fechas y costos.</p>
+          </div>
+        </a>
+        <a class="quickItem" href="#portales">
+          <span class="quickItem__icon" aria-hidden="true">🔐</span>
+          <div>
+            <strong>Portales</strong>
+            <p class="muted">Alumnos, docentes y administrativo.</p>
+          </div>
+        </a>
+        <a class="quickItem" href="#noticias">
+          <span class="quickItem__icon" aria-hidden="true">📰</span>
+          <div>
+            <strong>Noticias</strong>
+            <p class="muted">Comunicados y logros.</p>
+          </div>
+        </a>
+        <a class="quickItem" href="#eventos">
+          <span class="quickItem__icon" aria-hidden="true">📅</span>
+          <div>
+            <strong>Eventos</strong>
+            <p class="muted">Agenda institucional.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Oferta académica -->
+    <section class="section" id="oferta">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Oferta académica</h2>
+            <p class="muted">Programas organizados por áreas. Da clic para ver detalles (modal).</p>
+          </div>
+
+          <div class="filters">
+            <label class="sr-only" for="programFilter">Filtrar</label>
+            <select id="programFilter" class="select">
+              <option value="all">Todas las áreas</option>
+              <option value="salud">Salud</option>
+              <option value="negocios">Negocios</option>
+              <option value="ingenieria">Ingeniería</option>
+              <option value="sociales">Ciencias Sociales</option>
+            </select>
+
+            <label class="sr-only" for="programSearch">Buscar</label>
+            <input id="programSearch" class="input" type="search" placeholder="Buscar programa…" />
+          </div>
+        </div>
+
+        <div class="cards" id="programGrid" aria-live="polite">
+          <!-- JS inyecta tarjetas -->
+        </div>
+
+        <div class="ctaStrip">
+          <div>
+            <h3>¿No sabes qué programa elegir?</h3>
+            <p class="muted">Agenda una asesoría y recibe orientación vocacional.</p>
+          </div>
+          <a class="btn btn--primary" href="#contacto">Hablar con un asesor</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admisiones -->
+    <section class="section section--alt" id="admisiones">
+      <div class="container twoCol">
+        <div>
+          <h2>Admisiones</h2>
+          <p class="muted">
+            Proceso claro y acompañamiento. Consulta fechas, requisitos y opciones de beca.
+          </p>
+
+          <div class="steps">
+            <div class="step">
+              <span class="step__num">1</span>
+              <div>
+                <strong>Registro</strong>
+                <p class="muted">Completa el formulario y selecciona programa.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step__num">2</span>
+              <div>
+                <strong>Documentación</strong>
+                <p class="muted">Entrega de documentos y validación.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step__num">3</span>
+              <div>
+                <strong>Evaluación</strong>
+                <p class="muted">Entrevista y/o examen según el programa.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step__num">4</span>
+              <div>
+                <strong>Inscripción</strong>
+                <p class="muted">Pago e integración a tu grupo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card formCard" id="contacto">
+          <h3>Solicita información</h3>
+          <p class="muted">Te contactamos. Respuesta típica: 24–48 horas hábiles.</p>
+
+          <form id="infoForm" novalidate>
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input class="input" id="name" name="name" autocomplete="name" required />
+              <small class="error" data-error-for="name"></small>
+            </div>
+
+            <div class="field">
+              <label for="email">Correo</label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" required />
+              <small class="error" data-error-for="email"></small>
+            </div>
+
+            <div class="field">
+              <label for="phone">Teléfono</label>
+              <input class="input" id="phone" name="phone" inputmode="tel" placeholder="Ej. 55 1234 5678" required />
+              <small class="error" data-error-for="phone"></small>
+            </div>
+
+            <div class="field">
+              <label for="program">Programa de interés</label>
+              <select class="select" id="program" name="program" required>
+                <option value="">Selecciona…</option>
+                <option>Licenciatura</option>
+                <option>Posgrado</option>
+                <option>Educación continua</option>
+              </select>
+              <small class="error" data-error-for="program"></small>
+            </div>
+
+            <div class="field">
+              <label for="message">Mensaje (opcional)</label>
+              <textarea class="textarea" id="message" name="message" rows="4" placeholder="Cuéntanos qué necesitas…"></textarea>
+            </div>
+
+            <button class="btn btn--primary btn--full" type="submit">
+              Enviar solicitud
+            </button>
+
+            <p class="muted tiny">
+              Al enviar aceptas el aviso de privacidad institucional.
+            </p>
+
+            <div class="toast" id="formToast" role="status" aria-live="polite" aria-atomic="true"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vida universitaria -->
+    <section class="section" id="vida">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Vida universitaria</h2>
+            <p class="muted">Servicios y acompañamiento para la comunidad.</p>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <h3>Biblioteca</h3>
+            <p class="muted">Catálogo, repositorios, salas de estudio y recursos digitales.</p>
+            <a class="link" href="#portales">Acceder a recursos →</a>
+          </article>
+          <article class="card">
+            <h3>Vinculación</h3>
+            <p class="muted">Prácticas, bolsa de trabajo y convenios con empresas.</p>
+            <a class="link" href="#contacto">Conocer convenios →</a>
+          </article>
+          <article class="card">
+            <h3>Bienestar</h3>
+            <p class="muted">Tutorías, acompañamiento y actividades deportivas/culturales.</p>
+            <a class="link" href="#eventos">Ver actividades →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Noticias -->
+    <section class="section section--alt" id="noticias">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Noticias</h2>
+            <p class="muted">Comunicados recientes y logros institucionales.</p>
+          </div>
+          <a class="btn btn--secondary" href="#contacto">Sala de prensa</a>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <p class="pill pill--soft">Comunicado</p>
+            <h3>Actualización de calendario académico</h3>
+            <p class="muted">Fechas clave de inscripciones, parciales y cierres.</p>
+            <p class="tiny muted">Hace 3 días</p>
+          </article>
+          <article class="card">
+            <p class="pill pill--soft">Logro</p>
+            <h3>Equipo estudiantil gana concurso regional</h3>
+            <p class="muted">Proyecto con impacto social y mentoría docente.</p>
+            <p class="tiny muted">Hace 1 semana</p>
+          </article>
+          <article class="card">
+            <p class="pill pill--soft">Evento</p>
+            <h3>Semana de innovación y emprendimiento</h3>
+            <p class="muted">Charlas, talleres y networking con aliados.</p>
+            <p class="tiny muted">Hace 2 semanas</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eventos -->
+    <section class="section" id="eventos">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Eventos</h2>
+            <p class="muted">Agenda próxima (ejemplo). Puedes conectarlo a un backend después.</p>
+          </div>
+        </div>
+
+        <div class="tableCard">
+          <div class="tableRow tableRow--head">
+            <span>Fecha</span>
+            <span>Evento</span>
+            <span>Lugar</span>
+            <span></span>
+          </div>
+
+          <div class="tableRow">
+            <span>12 Mar</span>
+            <span>Open House</span>
+            <span>Auditorio</span>
+            <span><button class="btn btn--ghost btn--sm" type="button">Detalles</button></span>
+          </div>
+          <div class="tableRow">
+            <span>22 Mar</span>
+            <span>Feria de empleo</span>
+            <span>Explanada</span>
+            <span><button class="btn btn--ghost btn--sm" type="button">Detalles</button></span>
+          </div>
+          <div class="tableRow">
+            <span>05 Abr</span>
+            <span>Taller de becas</span>
+            <span>Virtual</span>
+            <span><button class="btn btn--ghost btn--sm" type="button">Detalles</button></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portales -->
+    <section class="section section--alt" id="portales">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Portales</h2>
+            <p class="muted">Acceso rápido a los sistemas. (En producción: autenticación SSO).</p>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <a class="portalCard" href="#" role="button" aria-label="Portal de Alumnos">
+            <div class="portalCard__icon" aria-hidden="true">👩‍🎓</div>
+            <div>
+              <strong>Portal Alumnos</strong>
+              <p class="muted">Calificaciones, pagos, horarios y trámites.</p>
+            </div>
+            <span class="portalCard__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="portalCard" href="#" role="button" aria-label="Portal Docentes">
+            <div class="portalCard__icon" aria-hidden="true">👨‍🏫</div>
+            <div>
+              <strong>Portal Docentes</strong>
+              <p class="muted">Planeación, listas, evaluaciones y evidencias.</p>
+            </div>
+            <span class="portalCard__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="portalCard" href="#" role="button" aria-label="Portal Administrativo">
+            <div class="portalCard__icon" aria-hidden="true">🏛️</div>
+            <div>
+              <strong>Portal Administrativo</strong>
+              <p class="muted">Procesos internos, reportes y gestión.</p>
+            </div>
+            <span class="portalCard__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand brand--footer">
+          <div class="brand__mark" aria-hidden="true">U</div>
+          <div class="brand__text">
+            <strong>Universidad</strong>
+            <span>Institucional</span>
+          </div>
+        </div>
+        <p class="muted">
+          Dirección: Calle Ejemplo 123, Ciudad • Tel: (00) 0000 0000
+        </p>
+        <p class="muted tiny">© <span id="year"></span> Universidad. Todos los derechos reservados.</p>
+      </div>
+
+      <div>
+        <h4>Enlaces</h4>
+        <ul class="footer__links">
+          <li><a href="#oferta">Oferta académica</a></li>
+          <li><a href="#admisiones">Admisiones</a></li>
+          <li><a href="#vida">Vida universitaria</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <ul class="footer__links">
+          <li><a href="#">Aviso de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Accesibilidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close="true"></div>
+    <div class="modal__panel" role="document">
+      <div class="modal__head">
+        <h3 id="modalTitle">Título</h3>
+        <button class="btn btn--ghost btn--sm" type="button" id="modalClose" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal__body" id="modalBody"></div>
+      <div class="modal__foot">
+        <a class="btn btn--primary" href="#admisiones" id="modalCTA">Me interesa</a>
+        <button class="btn btn--secondary" type="button" data-close="true">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
